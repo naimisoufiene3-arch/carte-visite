@@ -22,7 +22,7 @@
 
   <a-scene
     embedded
-    arjs="sourceType: webcam; debugUIEnabled: false; trackingMethod: best; detectionMode: mono; maxDetectionRate: 60;"
+    arjs="sourceType: webcam; debugUIEnabled: false; trackingMethod: best; detectionMode: mono; maxDetectionRate: 60; showMarker: true;"
     renderer="logarithmicDepthBuffer: true; antialias: true"
   >
     <!-- Charger les assets -->
@@ -37,12 +37,12 @@
         gltf-model="#hamburgerModel"
         position="0 0 0"
         rotation="0 180 0"
-        scale="2 2 2"> <!-- Augmenter l'échelle -->
+        scale="0.5 0.5 0.5"> <!-- Taille réduite -->
       </a-entity>
     </a-marker>
 
-    <!-- Caméra avec position ajustée et FOV réglé -->
-    <a-entity camera="fov: 60;" position="0 0 3"></a-entity>
+    <!-- Caméra avec position ajustée -->
+    <a-entity camera="fov: 80;" position="0 0 2"></a-entity>
   </a-scene>
 
 </body>
