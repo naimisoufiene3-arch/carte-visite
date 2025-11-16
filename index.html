@@ -36,14 +36,15 @@
       <!-- Afficher le modèle 3D sur le marqueur -->
       <a-entity
         gltf-model="#hamburgerModel"
-        position="0 0 0"
+        position="0 0 -1"
         rotation="0 180 0"
-        scale="0.5 0.5 0.5">
+        scale="0.3 0.3 0.3">
       </a-entity>
     </a-marker>
 
     <!-- Caméra -->
-    <a-entity camera></a-entity>
+    <a-entity camera="fov: 60;"></a-entity> <!-- Ajuster le FOV -->
+
   </a-scene>
 
 </body>
